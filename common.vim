@@ -68,11 +68,8 @@ set scrolloff=3
 
 set nowrap
 set cursorcolumn
-set cursorline
 set backspace=2
-
-" key map setting {{{1
-map <silent> <F2> :Dic<CR>
-map <silent> <F3> :TagbarToggle<CR>
-map <F4> :!python /home/chenxie/.vim/ldap.py <C-R><C-w><CR>
-" }}}1
+set noautochdir
+set hidden
+set cursorline
+set colorcolumn=81
