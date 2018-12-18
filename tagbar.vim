@@ -1,6 +1,5 @@
-" tagbar setting {{{1
 let g:tagbar_autofocus=1
 let g:tagbar_width=30
-let g:tagbar_left=1
+let g:tagbar_left=0
 set tags=tags;
-" }}}1
+map <silent> <F3> :TagbarToggle<CR>
