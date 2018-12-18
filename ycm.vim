@@ -1,4 +1,3 @@
-" YouCompleteMe setting {{{1
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0
 let g:ycm_cache_omnifunc=0
@@ -13,7 +12,7 @@ let g:ycm_key_invoke_completion='<M-;>'
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
 let g:ycm_server_python_interpreter='/usr/bin/python'
-set completeopt-=preview
+set completeopt-=preview,menu
 nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
@@ -30,5 +29,5 @@ let g:ycm_filetype_whitelist = {
                         \ "sh":1,
                         \ "zsh":1,
                         \ "zimbu":1,
+                                                \ "python":1,
                         \ }
-" }}}1
