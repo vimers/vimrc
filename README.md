@@ -11,7 +11,7 @@
     ```vim
     source ~/.vim/config/plugins.vim
     source ~/.vim/config/tagbar.vim
-    source ~/.vim/config/powerline.vim
+    source ~/.vim/config/statusline.vim
     source ~/.vim/config/ycm.vim
     source ~/.vim/config/fileexplore.vim
     source ~/.vim/config/common.vim
