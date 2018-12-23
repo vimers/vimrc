@@ -49,11 +49,11 @@ autocmd BufEnter * if exists("g:search_save") | let @/=g:search_save | endif
 " }}}1
 
 " arrow key and mouse setting {{{1
-noremap <Up> <nop>
-noremap <Down> <nop>
-noremap <Left> <nop>
-noremap <Right> <nop>
-set mouse=nvi
+" noremap <Up> <nop>
+" noremap <Down> <nop>
+" noremap <Left> <nop>
+" noremap <Right> <nop>
+set mouse=a
 " }}}1
 
 " clipboard settings {{{1
@@ -64,6 +64,22 @@ set isfname-==
 
 " Scroll Setting {{{1
 set scrolloff=3
+" }}}1
+
+" Buffer control mapper {{{1
+map <leader>bd :Bclose<CR>
+map <leader>ba :1,1000 bd!<CR>
+" }}}1
+
+" Tab key map {{{1
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove
+
+" Opens a new tab with the current buffer's path
+" Super useful when editing files in the same directory
+map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 " }}}1
 
 set nowrap

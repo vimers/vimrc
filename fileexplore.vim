@@ -23,4 +23,6 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
-nmap <F4> :NERDTreeToggle<CR>
+map <leader>nn :NERDTreeToggle<CR>
+map <leader>nb :NERDTreeFromBookmark
+map <leader>nf :NERDTreeFind<CR>

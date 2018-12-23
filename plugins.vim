@@ -9,7 +9,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vimers/vim-youdao'
-Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'tpope/vim-fugitive'
+"Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'itchyny/lightline.vim'
 Plugin 'hari-rangarajan/CCTree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-utils/vim-cscope'
