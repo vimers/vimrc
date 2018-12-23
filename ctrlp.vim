@@ -1,5 +1,5 @@
 let g:ctrlp_map = ',,'
-let g:ctrlp_open_multiple_files = 'v'
+let g:ctrlp_open_multiple_files = '2vjr'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/build/*
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',

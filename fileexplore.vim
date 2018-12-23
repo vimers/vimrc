@@ -6,8 +6,8 @@ let NERDTreeIgnore=['\.pyc','\~$','\.swp','\.git']
 let NERDTreeShowBookmarks=1
 let NERDTreeMinimalUI=1
 " when open vim without parameter,show NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " close NERDTree when no file opened
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
