@@ -89,3 +89,4 @@ set noautochdir
 set hidden
 set cursorline
 set colorcolumn=81
+set diffopt+=vertical
