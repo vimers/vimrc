@@ -8,17 +8,14 @@ let g:ycm_collect_identifiers_from_tags_files=1
 let g:ycm_min_num_of_chars_for_completion=1
 let g:ycm_seed_identifiers_with_syntax=1
 let g:ycm_min_num_identifier_candidate_chars = 2
-let g:ycm_key_invoke_completion='<M-;>'
+let g:ycm_key_invoke_completion='<C-;>'
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
 let g:ycm_server_python_interpreter='/usr/bin/python'
-set completeopt-=preview,menu
-nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
-nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
-nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_add_preview_to_completeopt = 0
+set completeopt=menu,menuone
 let g:ycm_error_symbol = '✗'
 let g:ycm_warning_symbol = '!'
-nnoremap <F6> :YcmForceCompileAndDiagnostics<CR>
 let g:ycm_filetype_blacklist={
         \ 'tagbar': 1,
         \}
@@ -31,3 +28,13 @@ let g:ycm_filetype_whitelist = {
                         \ "zimbu":1,
                                                 \ "python":1,
                         \ }
+
+let g:ycm_semantic_triggers = {
+                        \ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
+                        \ 'cs,lua,javascript': ['re!\w{2}'],
+                        \ }
+
+nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <F6> :YcmForceCompileAndDiagnostics<CR>
