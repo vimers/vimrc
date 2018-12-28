@@ -10,6 +10,7 @@
 3. Add following in $HOME/.vimrc
     ```vim
     source ~/.vim/config/plugins.vim
+    source ~/.vim/config/appearance.vim
     source ~/.vim/config/tagbar.vim
     source ~/.vim/config/statusline.vim
     source ~/.vim/config/ycm.vim
