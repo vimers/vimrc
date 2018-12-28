@@ -9,16 +9,6 @@ set noswapfile
 set nobackup
 " }}}1
 
-" scheme color setting {{{1
-syntax enable
-filetype on
-set t_Co=256
-let g:solarized_termcolors=256
-set background=dark
-set fillchars=vert:\ ,stl:\ ,stlnc:\
-colorscheme solarized
-" }}}1
-
 " Indent setting {{{1
 set autoindent
 set cindent
@@ -28,11 +18,6 @@ set softtabstop=4
 set shiftwidth=4
 set noexpandtab
 autocmd BufRead,BufNewFile *.c,*.h,*.java,*.cpp,*.cc,*.xml,*.py,*.lua,CMakeLists.txt set expandtab
-" }}}1
-
-" Hightlight setting {{{1
-set hlsearch
-set incsearch
 " }}}1
 
 " Fold setting {{{1
