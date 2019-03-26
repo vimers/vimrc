@@ -3,6 +3,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'Vundle.vim'
+Plugin 'inkarkat/vim-ingo-library' "need by vim-mark
+Plugin 'inkarkat/vim-mark'
 Plugin 'tagbar'
 Plugin 'file-line'
 Plugin 'scrooloose/nerdtree'
