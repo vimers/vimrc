@@ -68,10 +68,11 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 " }}}1
 
 set nowrap
-set cursorcolumn
 set backspace=2
 set noautochdir
 set hidden
-set cursorline
+" conflict with mark plugin
+" set cursorcolumn
+" set cursorline
 set colorcolumn=81
 set diffopt+=vertical
