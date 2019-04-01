@@ -71,8 +71,3 @@ set nowrap
 set backspace=2
 set noautochdir
 set hidden
-" conflict with mark plugin
-" set cursorcolumn
-" set cursorline
-set colorcolumn=81
-set diffopt+=vertical
