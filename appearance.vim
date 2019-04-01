@@ -19,5 +19,6 @@ set incsearch
 " set cursorcolumn
 " set cursorline
 set colorcolumn=120
-set diffopt+=vertical
 " }}}1
+
+set diffopt+=vertical
