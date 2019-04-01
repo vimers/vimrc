@@ -13,3 +13,11 @@ colorscheme solarized
 set hlsearch
 set incsearch
 " }}}1
+
+" Cursor show setting {{{1
+" conflict with mark plugin
+" set cursorcolumn
+" set cursorline
+set colorcolumn=120
+set diffopt+=vertical
+" }}}1
