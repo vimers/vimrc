@@ -17,7 +17,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set noexpandtab
-autocmd BufRead,BufNewFile *.c,*.h,*.java,*.cpp,*.cc,*.xml,*.py,*.lua,CMakeLists.txt set expandtab
+autocmd BufRead,BufNewFile *.c,*.h,*.hpp,*.java,*.cpp,*.cc,*.xml,*.py,*.lua,CMakeLists.txt set expandtab
 " }}}1
 
 " Fold setting {{{1
