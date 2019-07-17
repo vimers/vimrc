@@ -28,7 +28,7 @@ let g:ycm_filetype_whitelist = {
                         \ "zimbu":1,
                                                 \ "python":1,
                         \ }
-
+let g:ycm_auto_trigger = 1
 let g:ycm_semantic_triggers = {
                         \ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
                         \ 'cs,lua,javascript': ['re!\w{2}'],
