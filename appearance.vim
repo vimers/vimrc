@@ -22,3 +22,7 @@ set colorcolumn=120
 " }}}1
 
 set diffopt+=vertical
+
+" set max highlight mark num
+let g:mwDefaultHighlightingPalette = 'maximum'
+let g:mwDefaultHighlightingNum = 9
