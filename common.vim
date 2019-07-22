@@ -21,9 +21,9 @@ autocmd BufRead,BufNewFile *.c,*.h,*.hpp,*.java,*.cpp,*.cc,*.xml,*.py,*.lua,CMak
 " }}}1
 
 " Fold setting {{{1
-autocmd filetype c,cpp,java,python setlocal foldmethod=syntax
-autocmd filetype c,cpp,java,python normal zR
-autocmd filetype txt,vim setlocal foldmethod=marker
+" autocmd filetype c,cpp,java,python setlocal foldmethod=syntax
+" autocmd filetype c,cpp,java,python normal zR
+" autocmd filetype txt,vim setlocal foldmethod=marker
 " }}}1
 
 " jump last leave position {{{1
