@@ -28,3 +28,7 @@ map <leader>nb :NERDTreeFromBookmark
 map <leader>nf :NERDTreeFind<CR>
 
 let g:webdevicons_enable_nerdtree = 1
+let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+let g:webdevicons_conceal_nerdtree_brackets = 1
+let g:WebDevIconsNerdTreeGitPluginForceVAlign = 0
