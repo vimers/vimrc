@@ -12,29 +12,18 @@
     ```vim
 	source ~/.vim/config/plugins.vim
 	source ~/.vim/config/appearance.vim
-	source ~/.vim/config/tagbar.vim
 	source ~/.vim/config/statusline.vim
-	source ~/.vim/config/ycm.vim
 	source ~/.vim/config/fileexplore.vim
 	source ~/.vim/config/common.vim
-	source ~/.vim/config/ctrlp.vim
+	source ~/.vim/config/fuzzyfinder.vim
 	source ~/.vim/config/dict.vim
 	source ~/.vim/config/lsc.vim
+	source ~/.vim/config/comment.vim
     ```
-4. Install all plugins. Open vim and execute`:PluginInstall`
-5. install YouCompleteMe
+4. Install all plugins. Open vim and execute`:PlugInstall`
+5. install cquery
+6. Change font to nerd fonts
+7. link coc-config file to `$HOME/.vim`
     ```shell
-    cd .vim/bundle/YouCompleteMe/
-    ./install.sh --all
+    	ln -s $HOME/.vim/config/coc-settings.json $HOME/.vim/
     ```
-	Compile clang+llvm will need large memory exceed 1.5G. So if your computer don't have enough memory, use swap memory.
-	```shell
-	sudo dd if=/dev/zero of=/swapfile bs=64M count=16
-	sudo mkswap /swapfile
-	sudo swapon /swapfile
-	```
-	free swapfile when compiling complete
-	```shell
-	sudo swapoff /swapfile
-	sudo rm /swapfile
-	```
