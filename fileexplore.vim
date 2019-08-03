@@ -26,3 +26,5 @@ let g:NERDTreeIndicatorMapCustom = {
 map <leader>nn :NERDTreeToggle<CR>
 map <leader>nb :NERDTreeFromBookmark
 map <leader>nf :NERDTreeFind<CR>
+
+let g:webdevicons_enable_nerdtree = 1
