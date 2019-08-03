@@ -25,5 +25,5 @@
 6. Change font to nerd fonts
 7. link coc-config file to `$HOME/.vim`
     ```shell
-    	ln -s $HOME/.vim/config/coc-settings.json $HOME/.vim/
+    ln -s $HOME/.vim/config/coc-settings.json $HOME/.vim/
     ```
