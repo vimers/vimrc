@@ -23,7 +23,8 @@
 4. Install all plugins. Open vim and execute`:PlugInstall`
 5. install cquery
 6. Change font to nerd fonts
-7. link coc-config file to `$HOME/.vim`
+7. link coc-config/snippes-config file to `$HOME/.vim`
     ```shell
     ln -s $HOME/.vim/config/coc-settings.json $HOME/.vim/
+    ln -s $HOME/.vim/config/UltiSnips $HOME/.vim/
     ```
