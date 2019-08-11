@@ -30,6 +30,7 @@ function! s:show_documentation()
 endfunction
 
 " snippet setting {{{1
+set virtualedit=onemore
 " Use <C-l> for trigger snippet expand.
 imap <C-l> <Plug>(coc-snippets-expand)
 

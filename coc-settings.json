@@ -11,5 +11,6 @@
 		}
 	},
 	"git.enableGutters": true,
-	"coc.preferences.currentFunctionSymbolAutoUpdate": true
+	"coc.preferences.currentFunctionSymbolAutoUpdate": true,
+	"snippets.userSnippetsDirectory": "~/.vim/config/UltiSnips"
 }
