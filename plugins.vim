@@ -18,4 +18,5 @@ Plug 'tpope/vim-unimpaired'
 Plug 'itchyny/lightline.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdcommenter'
+Plug 'ianding1/leetcode.vim'
 call plug#end()
