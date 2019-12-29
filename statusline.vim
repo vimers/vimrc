@@ -29,15 +29,7 @@ let g:lightline = {
 
 function! LightlineMode() 
     let nr = s:get_buffer_number() 
-    if nr > 10
-        return ''
-    endif
-    let nmap = [ '',  '❶ ',  '❷ ',  '❸ ', '❹ ','❺ ',  '❻ ',  '❼ ',  '❽ ',  '❾ ','➓ ' ]
-    let num = nmap[nr]
-    if nr == 0
-        return ''
-    endif
-    return num 
+    return nr
 endfunction
 function! s:get_buffer_number() 
     let i = 0
