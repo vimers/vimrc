@@ -14,6 +14,12 @@ set hlsearch
 set incsearch
 " }}}1
 
+" Highlight cpp {{{1
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_posix_standard = 1
+" }}}1
+
 " Cursor show setting {{{1
 " conflict with mark plugin
 " set cursorcolumn

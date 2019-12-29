@@ -19,4 +19,5 @@ Plug 'itchyny/lightline.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
+Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
