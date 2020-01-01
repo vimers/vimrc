@@ -11,6 +11,14 @@
 		}
 	},
 	"git.enableGutters": true,
+	"git.addedSign.hlGroup": "GitGutterAdd",
+	"git.changedSign.hlGroup": "GitGutterChange",
+	"git.removedSign.hlGroup": "GitGutterDelete",
+	"git.topRemovedSign.hlGroup": "GitGutterDelete",
+	"git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
 	"coc.preferences.currentFunctionSymbolAutoUpdate": true,
+	"python.jediEnabled": false,
+	"python.setInterpreter": "/usr/bin/python3",
+	"python.autoComplete.extraPaths": ["/usr/local/lib/python3.6/dist-packages"],
 	"snippets.userSnippetsDirectory": "~/.vim/config/UltiSnips"
 }

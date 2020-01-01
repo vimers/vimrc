@@ -10,15 +10,9 @@
 	```
 3. Add following in $HOME/.vimrc
     ```vim
-	source ~/.vim/config/plugins.vim
-	source ~/.vim/config/appearance.vim
-	source ~/.vim/config/statusline.vim
-	source ~/.vim/config/fileexplore.vim
-	source ~/.vim/config/common.vim
-	source ~/.vim/config/fuzzyfinder.vim
-	source ~/.vim/config/dict.vim
-	source ~/.vim/config/lsc.vim
-	source ~/.vim/config/comment.vim
+	for config_file in globpath('~/.vim/config', '*.vim', 1, 1)
+		exec 'source '.fnameescape(config_file)
+	endfor
     ```
 4. Install all plugins. Open vim and execute`:PlugInstall`
 5. install cquery

@@ -3,9 +3,9 @@ let g:lightline = {
             \ 'colorscheme': 'solarized',
             \ 'active': {
             \   'left': [  ['homemode' ],
-            \             [ 'fugitive','gitgutter'],[ 'filename'],['func' ],['cocerror'],['cocwarn'] ],
+            \             [ 'fugitive','gitgutter'],[ 'filename'],['curfunc' ],['cocerror'],['cocwarn'] ],
             \   'right':[ ['lineinfo'],
-            \             [ 'percent'],['fileformat','fileencoding']  ]
+            \             [ 'percent'],['fileformat','fileencoding'] ]
             \ },
 				\   'component': {
 				\     'lineinfo': ' %3l:%-2v',
@@ -17,7 +17,7 @@ let g:lightline = {
             \   'readonly': 'LightLineReadonly',
             \   'modified': 'LightLineModified',
             \   'filename': 'LightLineFname',
-            \    'func' : 'CocCurrentFunction',
+            \    'curfunc' : 'CocCurrentFunction',
             \   'cocerror': 'LightLineCocError',
             \   'cocwarn' : 'LightLineCocWarn',
             \   'filetype': 'LightLineFiletype',
@@ -127,7 +127,6 @@ endfunction
 function! LightLineFname() 
     let icon = (strlen(&filetype) ? ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') 
     let filename = LightLineFilename()
-    let ret = [filename,icon]
     if filename == ''
         return ''
     endif
