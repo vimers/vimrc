@@ -1,12 +1,13 @@
 {
 	"languageserver": {
-		"cquery": {
-			"command": "cquery",
-			"args": ["--log-file=/tmp/cq.log"],
-			"filetypes": ["c", "cpp"],
-			"rootPatterns": ["compile_flags.txt", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+		"ccls": {
+			"command": "ccls",
+			"filetypes": ["c", "cpp", "objc", "objcpp"],
+			"rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
 			"initializationOptions": {
-				"cacheDirectory": "/tmp/cquery"
+				"cache": {
+					"directory": "/tmp/ccls"
+				}
 			}
 		}
 	},
@@ -18,7 +19,5 @@
 	"git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
 	"coc.preferences.currentFunctionSymbolAutoUpdate": true,
 	"python.jediEnabled": false,
-	"python.setInterpreter": "/usr/bin/python3",
 	"python.autoComplete.extraPaths": ["/usr/local/lib/python3.6/dist-packages"],
-	"snippets.userSnippetsDirectory": "~/.vim/config/UltiSnips"
 }

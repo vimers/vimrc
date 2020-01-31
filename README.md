@@ -15,7 +15,7 @@
 	endfor
     ```
 4. Install all plugins. Open vim and execute`:PlugInstall`
-5. install cquery
+5. install ccls
 6. Change font to nerd fonts
 7. link coc-config/snippes-config file to `$HOME/.vim`
     ```shell
