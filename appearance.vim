@@ -33,6 +33,3 @@ set diffopt+=vertical
 let g:mwDefaultHighlightingPalette = 'maximum'
 let g:mwDefaultHighlightingNum = 9
 nmap <unique> <Leader>rr <Plug>MarkRegex
-
-" coc-highlight
-autocmd CursorHold * silent call CocActionAsync('highlight')
