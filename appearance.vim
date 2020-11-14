@@ -2,11 +2,12 @@
 syntax enable
 filetype on
 set t_Co=256
+set term=xterm-256color
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 set background=dark
 set fillchars=vert:\ ,stl:\ ,stlnc:\
-colorscheme solarized
+colorscheme solarized8_high
 " }}}1
 
 " Hightlight setting {{{1
