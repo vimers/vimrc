@@ -25,5 +25,11 @@
 		"<cr>": ["expandable?", "expand", "open"],
 		"v": "open:vsplit"
 	},
-	"python.jediEnabled": true
+	"python.jediEnabled": true,
+	"snippets.extends": {
+		"cpp": ["c"],
+		"javascriptreact": ["javascript"],
+		"typescript": ["javascript"]
+	},
+	"snippets.userSnippetsDirectory": "~/.vim/config/UltiSnips"
 }
