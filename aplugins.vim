@@ -8,7 +8,6 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 " use plugin coc-lists coc-git coc-json coc-python coc-explorer coc-snippets
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'honza/vim-snippets'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'voldikss/vim-translate-me'
@@ -19,6 +18,9 @@ Plug 'tpope/vim-unimpaired'
 Plug 'itchyny/lightline.vim'
 Plug 'lifepillar/vim-solarized8'
 Plug 'scrooloose/nerdcommenter'
+# snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
