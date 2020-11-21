@@ -69,5 +69,5 @@ let g:coc_explorer_global_presets = {
 
 " Use preset argument to open it
 nmap <space>ed :CocCommand explorer --preset .vim<CR>
-nmap <space>ef :CocCommand explorer --preset floating<CR>
+nmap <space>ef :CocCommand explorer --preset tab<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
