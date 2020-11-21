@@ -18,5 +18,12 @@
 	"git.topRemovedSign.hlGroup": "GitGutterDelete",
 	"git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
 	"coc.preferences.currentFunctionSymbolAutoUpdate": true,
+	"explorer.width": 30,
+	"explorer.icon.enableNerdfont": true,
+	"explorer.previewAction.onHover": true,
+	"explorer.keyMappings.global": {
+		"<cr>": ["expandable?", "expand", "open"],
+		"v": "open:vsplit"
+	},
 	"python.jediEnabled": true
 }
