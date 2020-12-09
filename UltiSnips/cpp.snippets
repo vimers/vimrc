@@ -1,0 +1,10 @@
+snippet ifndef "header first line"
+`!p snip.rv = """#ifndef {0}
+#define {0}
+""".format(
+fn.replace(".", "_").upper()
+)
+`
+$1
+#endif
+endsnippet
