@@ -36,4 +36,5 @@ let g:mwDefaultHighlightingNum = 9
 nmap <unique> <Leader>rr <Plug>MarkRegex
 
 " show linenum
-set relativenumber
+set number relativenumber
+highlight LineNr term=bold ctermfg=grey ctermfg=NONE
