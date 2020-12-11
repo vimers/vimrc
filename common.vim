@@ -55,3 +55,5 @@ set nowrap
 set backspace=2
 set noautochdir
 set hidden
+
+let g:rooter_patterns = ['.git', '.svn', '.hg', 'build/Makefile', '*.sln']
