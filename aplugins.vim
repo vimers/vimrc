@@ -6,7 +6,7 @@ Plug 'bogado/file-line'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-" use plugin coc-lists coc-git coc-json coc-python coc-explorer coc-snippets
+" use plugin coc-git coc-json coc-python
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " fuzzy search
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
