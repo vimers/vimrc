@@ -7,6 +7,9 @@
 			"initializationOptions": {
 				"cache": {
 					"directory": "/tmp/ccls"
+				},
+				"index": {
+					"threads": 1
 				}
 			}
 		}
@@ -17,6 +20,5 @@
 	"git.removedSign.hlGroup": "GitGutterDelete",
 	"git.topRemovedSign.hlGroup": "GitGutterDelete",
 	"git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
-	"coc.preferences.currentFunctionSymbolAutoUpdate": true,
-	"python.jediEnabled": true
+	"coc.preferences.currentFunctionSymbolAutoUpdate": true
 }
