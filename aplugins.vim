@@ -21,7 +21,7 @@ Plug 'airblade/vim-rooter'
 Plug 'tpope/vim-unimpaired'
 " status line setting
 Plug 'itchyny/lightline.vim'
-Plug 'lifepillar/vim-solarized8'
+Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdcommenter'
 " snippets
 Plug 'SirVer/ultisnips'

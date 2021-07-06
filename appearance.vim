@@ -3,16 +3,16 @@ syntax enable
 filetype on
 set t_Co=256
 set term=xterm-256color
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
 set background=dark
 set fillchars=vert:\ ,stl:\ ,stlnc:\
-colorscheme solarized8_high
+colorscheme gruvbox
 " }}}1
 
 " Hightlight setting {{{1
 set hlsearch
 set incsearch
+highlight CocFloating ctermbg=Grey
+highlight CocFloating ctermfg=Yellow
 " }}}1
 
 " Highlight cpp {{{1
@@ -36,5 +36,5 @@ let g:mwDefaultHighlightingNum = 9
 nmap <unique> <Leader>rr <Plug>MarkRegex
 
 " show linenum
-set number relativenumber
+" set number relativenumber
 highlight LineNr term=bold ctermfg=grey ctermfg=NONE
