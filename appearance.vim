@@ -11,8 +11,8 @@ colorscheme gruvbox
 " Hightlight setting {{{1
 set hlsearch
 set incsearch
-highlight CocFloating ctermbg=Grey
-highlight CocFloating ctermfg=Yellow
+highlight CocFloating ctermbg=White
+highlight CocFloating ctermfg=Black
 " }}}1
 
 " Highlight cpp {{{1
