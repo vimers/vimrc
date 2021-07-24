@@ -6,7 +6,7 @@ Plug 'bogado/file-line'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-" use plugin coc-git coc-json coc-python
+" lsc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " fuzzy search
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
@@ -27,5 +27,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
-Plug 'octol/vim-cpp-enhanced-highlight'
+" highlight
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 call plug#end()
