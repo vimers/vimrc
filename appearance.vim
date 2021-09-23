@@ -2,7 +2,6 @@
 syntax enable
 filetype on
 set t_Co=256
-set term=xterm-256color
 set background=dark
 set fillchars=vert:\ ,stl:\ ,stlnc:\
 colorscheme gruvbox
