@@ -19,14 +19,13 @@ Plug 'airblade/vim-gitgutter'
 Plug 'airblade/vim-rooter'
 " common shortcut keys
 Plug 'tpope/vim-unimpaired'
-" status line setting
+" appearence
 Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'
-Plug 'scrooloose/nerdcommenter'
-" snippets
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'tpope/vim-surround'
 " highlight
 Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'scrooloose/nerdcommenter'
+" snippets
+Plug 'honza/vim-snippets'
+Plug 'tpope/vim-surround'
 call plug#end()

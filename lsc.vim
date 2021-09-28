@@ -3,7 +3,7 @@ set hidden
 set updatetime=300
 set shortmess+=c
 
-let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pyright', 'coc-clangd']
+let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pyright', 'coc-clangd', 'coc-snippets']
 
 " Use `[c` and `]c` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
