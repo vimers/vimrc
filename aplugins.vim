@@ -17,6 +17,7 @@ Plug 'voldikss/vim-translate-me'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'airblade/vim-rooter'
+Plug 'kdheepak/lazygit.nvim'
 " common shortcut keys
 Plug 'tpope/vim-unimpaired'
 " appearence
