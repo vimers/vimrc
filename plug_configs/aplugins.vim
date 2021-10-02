@@ -20,6 +20,8 @@ Plug 'airblade/vim-rooter'
 Plug 'kdheepak/lazygit.nvim'
 " common shortcut keys
 Plug 'tpope/vim-unimpaired'
+Plug 'gcmt/wildfire.vim'
+Plug 'mg979/vim-visual-multi'
 " appearence
 Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'

@@ -1,24 +1,24 @@
 ## Usage
-1. Install Vundle to manage vim plugins
+1. Install vim-plug to manage plugins
+** vim
     ```shell
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	```
+** nvim
+    ```shell
+    sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    ```
 2. Checkout repo to specific directory
     ```shell
-	git clone https://github.com/vimers/vimrc $HOME/.vim/config
+	git clone https://github.com/vimers/vimrc $HOME/.config/nvim
 	```
-3. Add following in $HOME/.vimrc
-    ```vim
-	for config_file in globpath('~/.vim/config', '*.vim', 1, 1)
-		exec 'source '.fnameescape(config_file)
-	endfor
-    ```
-4. Install all plugins. Open vim and execute`:PlugInstall`
-5. install ccls
-6. Change font to nerd fonts
-7. link coc-config/snippes-config file to `$HOME/.vim`
+    add soft link when using vim(NOT NEED USING NVIM)
     ```shell
-    ln -s $HOME/.vim/config/coc-settings.json $HOME/.vim/
-    ln -s $HOME/.vim/config/UltiSnips $HOME/.vim/
+    ln -s ~/.config/nvim/init.vim ~/.vimrc
+    ln -s ~/.config/nvim/coc-settings.json ~/.vim/
     ```
+3. Install all plugins. Open vim and execute`:PlugInstall`
+4. Install clangd by [the official install instructions](https://github.com/clangd/clangd/releases)
+5. Change font to nerd fonts
