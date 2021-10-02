@@ -80,7 +80,9 @@
 		"vue",
 		"svelte",
 		"cs",
-		"prisma"
+		"prisma",
+		"c",
+		"cpp"
 	],
 	"signature.target": "float",
 	"prettier.printWidth": 100,
