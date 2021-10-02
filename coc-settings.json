@@ -85,6 +85,7 @@
 		"cpp"
 	],
 	"signature.target": "float",
+	"prettier.tabWidth": 4,
 	"prettier.printWidth": 100,
 	"prettier.eslintIntegration": true,
 	"prettier.disableLanguages": [],
