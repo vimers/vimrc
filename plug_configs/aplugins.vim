@@ -30,4 +30,6 @@ Plug 'scrooloose/nerdcommenter'
 " snippets
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
+" registers
+Plug 'junegunn/vim-peekaboo'
 call plug#end()
