@@ -94,5 +94,6 @@
 	"prettier.trailingComma": "all",
 	"prettier.singleQuote": false,
 	"coc-actions.hideCursor": false,
-	"coc-actions.showActionKind": true
+	"coc-actions.showActionKind": true,
+	"translator.engines": ["bing", "youdao"]
 }

@@ -3,7 +3,8 @@ set hidden
 set updatetime=300
 set shortmess+=c
 
-let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pyright', 'coc-clangd', 'coc-snippets', 'coc-prettier', 'coc-actions']
+let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pyright', 'coc-clangd',
+			\ 'coc-snippets', 'coc-prettier', 'coc-actions', 'coc-translator', 'coc-pairs']
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -80,3 +81,8 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
   vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
   vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
 endif
+
+
+" translator
+nmap <leader>t <Plug>(coc-translator-p)
+vmap <leader>t <Plug>(coc-translator-pv)
