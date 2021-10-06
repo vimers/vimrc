@@ -4,7 +4,8 @@ set updatetime=300
 set shortmess+=c
 
 let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pyright', 'coc-clangd',
-			\ 'coc-snippets', 'coc-prettier', 'coc-actions', 'coc-translator', 'coc-pairs']
+			\ 'coc-snippets', 'coc-prettier', 'coc-actions', 'coc-translator', 'coc-pairs',
+			\ 'coc-emoji']
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
