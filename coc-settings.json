@@ -80,9 +80,7 @@
 		"vue",
 		"svelte",
 		"cs",
-		"prisma",
-		"c",
-		"cpp"
+		"prisma"
 	],
 	"signature.target": "float",
 	"prettier.tabWidth": 4,
