@@ -22,5 +22,9 @@
     ln -s ~/.config/nvim/coc-settings.json ~/.vim/
     ```
 3. Install all plugins. Open vim and execute`:PlugInstall`
-4. Install clangd by [the official install instructions](https://github.com/clangd/clangd/releases)
+4. Install clangd by [the official install instructions](https://github.com/clangd/clangd/releases) or using the following command
+
+	```vimscript
+	:CocCommand clangd.install
+	```
 5. Change font to nerd fonts
