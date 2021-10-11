@@ -93,8 +93,6 @@
 	"prettier.useTabs": true,
 	"prettier.trailingComma": "all",
 	"prettier.singleQuote": false,
-	"coc-actions.hideCursor": false,
-	"coc-actions.showActionKind": true,
 	"translator.engines": ["bing", "youdao"],
 	"coc.source.emoji.filetypes": ["markdown", "gitcommit"]
 }
