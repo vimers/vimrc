@@ -3,7 +3,7 @@ set hidden
 set updatetime=300
 set shortmess+=c
 
-let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pyright', 'coc-clangd',
+let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pyright', 'coc-clangd', 'coc-java',
 			\ 'coc-snippets', 'coc-prettier', 'coc-translator', 'coc-pairs',
 			\ 'coc-emoji']
 

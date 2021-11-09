@@ -22,9 +22,14 @@
     ln -s ~/.config/nvim/coc-settings.json ~/.vim/
     ```
 3. Install all plugins. Open vim and execute`:PlugInstall`
-4. Install clangd by [the official install instructions](https://github.com/clangd/clangd/releases) or using the following command
+4. Install language server.
+    - clangd
+	following by [the official install instructions](https://github.com/clangd/clangd/releases) or using the following command
 
 	```vimscript
 	:CocCommand clangd.install
 	```
+	- jdt
+	Download jdt binary from [official website](https://download.eclipse.org/jdtls/snapshots/?d).
+	And extract files to `~/.config/coc/extensions/coc-java-data/server`
 5. Change font to nerd fonts
