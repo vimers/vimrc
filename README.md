@@ -23,13 +23,19 @@
     ```
 3. Install all plugins. Open vim and execute`:PlugInstall`
 4. Install language server.
-    - clangd
+    - clangd(c/c++)
+
 	following by [the official install instructions](https://github.com/clangd/clangd/releases) or using the following command
 
 	```vimscript
 	:CocCommand clangd.install
 	```
-	- jdt
+	- jdt(java)
+
 	Download jdt binary from [official website](https://download.eclipse.org/jdtls/snapshots/?d).
 	And extract files to `~/.config/coc/extensions/coc-java-data/server`
+
+	- pyright(python)
+
+	No additional operations. Language server is contained in coc-pyright that will be installed automatically.
 5. Change font to nerd fonts
