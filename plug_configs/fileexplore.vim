@@ -1,34 +1,21 @@
-let NERDTreeShowLineNumbers=1
-let NERDTreeAutoCenter=1
-let NERDTreeShowHidden=1
-let NERDTreeWinSize=31
-let NERDTreeIgnore=['\.pyc','\~$','\.swp','\.git']
-let NERDTreeShowBookmarks=1
-let NERDTreeMinimalUI=1
-" when open vim without parameter,show NERDTree
-" autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" close NERDTree when no file opened
-autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+let g:coc_explorer_global_presets = {
+\ 'floating': {
+\   'position': 'floating',
+\   'open-action-strategy': 'sourceWindow'
+\ },
+\ 'buffer': {
+\   'position': 'floating',
+\   'source': [{'name': 'buffer', 'expand': v:true}]
+\ },
+\ 'fixLeft': {
+\   'position': 'left',
+\   'open-action-strategy': 'select'
+\ }
+\ }
 
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ "Unknown"   : "?"
-    \ }
-
-map <leader>nn :NERDTreeToggle<CR>
-map <leader>nb :NERDTreeFromBookmark
-map <leader>nf :NERDTreeFind<CR>
-
-let g:webdevicons_enable_nerdtree = 1
-let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
-let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
-let g:webdevicons_conceal_nerdtree_brackets = 1
-let g:WebDevIconsNerdTreeGitPluginForceVAlign = 0
+nmap <leader>ef <Cmd>CocCommand explorer --preset floating<CR>
+nmap <leader>eb <Cmd>CocCommand explorer --preset buffer<CR>
+nmap <leader>ee <Cmd>CocCommand explorer --preset fixLeft<CR>
+augroup vimers_fileexplore
+	autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+augroup end

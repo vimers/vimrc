@@ -92,5 +92,6 @@
 	"prettier.trailingComma": "all",
 	"prettier.singleQuote": false,
 	"translator.engines": ["bing", "youdao"],
-	"coc.source.emoji.filetypes": ["markdown", "gitcommit"]
+	"coc.source.emoji.filetypes": ["markdown", "gitcommit"],
+	"explorer.icon.enableNerdfont": true
 }

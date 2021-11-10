@@ -1,13 +1,14 @@
 let mapleader = ","
 " plug setting {{{1
 call plug#begin('~/.vim/plugged')
+" mark word with different colors
 Plug 'inkarkat/vim-ingo-library' "need by vim-mark
 Plug 'inkarkat/vim-mark'
+" open file with line number
 Plug 'bogado/file-line'
-" file explorer
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+" nerdfont icons
 Plug 'ryanoasis/vim-devicons'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" file explorer use coc-explorer
 " lsc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " fuzzy search
@@ -35,6 +36,12 @@ Plug 'tpope/vim-surround'
 " registers
 Plug 'junegunn/vim-peekaboo'
 call plug#end()
+" }}}1
+
+" coc.nvim plugins {{{1
+let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pyright', 'coc-clangd', 'coc-java', 'coc-explorer',
+			\ 'coc-snippets', 'coc-prettier', 'coc-translator', 'coc-pairs',
+			\ 'coc-emoji']
 " }}}1
 
 " include other config {{{1
