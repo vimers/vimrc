@@ -35,6 +35,8 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 " registers
 Plug 'junegunn/vim-peekaboo'
+" log highlight
+Plug 'vimers/vim-log'
 call plug#end()
 " }}}1
 
