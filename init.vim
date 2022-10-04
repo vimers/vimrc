@@ -8,7 +8,8 @@ Plug 'inkarkat/vim-mark'
 Plug 'bogado/file-line'
 " nerdfont icons
 Plug 'ryanoasis/vim-devicons'
-" file explorer use coc-explorer
+" syntax highlight
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " lsc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " fuzzy search
@@ -22,13 +23,11 @@ Plug 'airblade/vim-rooter'
 Plug 'kdheepak/lazygit.nvim'
 " common shortcut keys
 Plug 'tpope/vim-unimpaired'
-Plug 'gcmt/wildfire.vim'
 Plug 'mg979/vim-visual-multi'
 " appearence
 Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'
 " highlight
-Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'scrooloose/nerdcommenter'
 " snippets
 Plug 'honza/vim-snippets'
@@ -51,6 +50,10 @@ for config_file in globpath('~/.config/nvim/plug_configs', '*.vim', 1, 1)
 	exec 'source '.fnameescape(config_file)
 endfor
 " }}}1
+
+if has('nvim')
+	lua require('treesitter')
+endif
 
 " common key mappings {{{1
 inoremap jk <esc>
