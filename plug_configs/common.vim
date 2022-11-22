@@ -41,6 +41,17 @@ autocmd BufEnter * if exists("g:search_save") | let @/=g:search_save | endif
 set mouse=a
 " }}}1
 
+" solve nvim ctrl-z freeze
+" if has("nvim")
+"     nnoremap <C-z> <nop>
+"     inoremap <C-z> <nop>
+"     vnoremap <C-z> <nop>
+"     snoremap <C-z> <nop>
+"     xnoremap <C-z> <nop>
+"     cnoremap <C-z> <nop>
+"     onoremap <C-z> <nop>
+" endif
+
 " clipboard settings {{{1
 set clipboard=unnamed
 set tw=0

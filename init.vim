@@ -16,6 +16,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 " git plugins
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -36,6 +38,8 @@ Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-peekaboo'
 " log highlight
 Plug 'vimers/vim-log'
+" cursor move
+Plug 'ggandor/leap.nvim'
 call plug#end()
 " }}}1
 
@@ -53,6 +57,7 @@ endfor
 
 if has('nvim')
 	lua require('treesitter')
+	lua require('leap').add_default_mappings()
 endif
 
 " common key mappings {{{1
