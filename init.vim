@@ -12,6 +12,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " lsc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'fannheyward/telescope-coc.nvim'
 " fuzzy search
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -40,6 +42,8 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'vimers/vim-log'
 " cursor move
 Plug 'ggandor/leap.nvim'
+" terminal
+Plug 'voldikss/vim-floaterm'
 call plug#end()
 " }}}1
 
@@ -58,6 +62,7 @@ endfor
 if has('nvim')
 	lua require('treesitter')
 	lua require('leap').add_default_mappings()
+	lua require('telescope_config')
 endif
 
 " common key mappings {{{1

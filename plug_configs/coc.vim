@@ -44,7 +44,9 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gr <cmd>Telescope coc references<cr>
+nmap <silent> <leader>fs <cmd>Telescope coc document_symbols<cr>
+nmap <silent> <leader>fw <cmd>Telescope coc workspace_symbols<cr>
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call ShowDocumentation()<CR>
