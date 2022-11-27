@@ -2,7 +2,7 @@ if has('nvim')
 " Find files using Telescope command-line sugar.
 nnoremap <leader>, <cmd>Telescope pickers<cr>
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fg :execute 'Telescope live_grep default_text=' . expand('<cword>')<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fm <cmd>Telescope oldfiles<cr>
 nnoremap <leader>ft <cmd>Telescope treesitter<cr>
