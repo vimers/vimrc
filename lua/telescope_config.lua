@@ -1,15 +1,11 @@
 require("telescope").setup({
     defaults = {
-        layout_strategy = "vertical",
+        layout_strategy = "flex",
         layout_config = {
-            height = 0.95,
-            prompt_position = 'top',
+            flex = {
+                flip_columns = 120,
+            },
         },
-    },
-    pickers = {
-        find_files = {
-            theme = "dropdown"
-        }
     },
     extensions = {
         coc = {
