@@ -35,18 +35,25 @@ else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
-" Use `[g` and `]g` to navigate diagnostics
+" Use `[d` and `]d` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> [d <Plug>(coc-diagnostic-prev)
+nmap <silent> ]d <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
+if has('nvim')
+nmap <silent> gd <cmd>Telescope coc definitions<cr>
+nmap <silent> gy <cmd>Telescope coc type_definitions<cr>
+nmap <silent> gi <cmd>Telescope coc implementations<cr>
+nmap <silent> gr <cmd>Telescope coc references<cr>
+nmap <silent> gs <cmd>Telescope coc document_symbols<cr>
+nmap <silent> gw <cmd>Telescope coc workspace_symbols<cr>
+else
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <cmd>Telescope coc references<cr>
-nmap <silent> <leader>fs <cmd>Telescope coc document_symbols<cr>
-nmap <silent> <leader>fw <cmd>Telescope coc workspace_symbols<cr>
+nmap <silent> gr <Plug>(coc-references)
+endif
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call ShowDocumentation()<CR>
