@@ -49,7 +49,7 @@ call plug#end()
 
 " coc.nvim plugins {{{1
 let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pyright', 'coc-clangd', 'coc-java', 'coc-explorer',
-			\ 'coc-snippets', 'coc-prettier', 'coc-translator', 'coc-pairs',
+			\ 'coc-snippets', 'coc-prettier', 'coc-translator', 'coc-pairs', 'coc-cmake',
 			\ 'coc-emoji']
 " }}}1
 
