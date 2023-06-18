@@ -8,7 +8,6 @@
 	"git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
 	"coc.preferences.currentFunctionSymbolAutoUpdate": true,
 	"coc.preferences.messageLevel": "error",
-	"suggest.detailMaxLength": 60,
 	"suggest.noselect": true,
 	"suggest.enablePreselect": false,
 	"suggest.triggerAfterInsertEnter": true,
@@ -70,5 +69,9 @@
 	"prettier.singleQuote": false,
 	"translator.engines": ["bing", "youdao"],
 	"coc.source.emoji.filetypes": ["markdown", "gitcommit"],
-	"explorer.icon.enableNerdfont": true
+	"outline.keepWindow": true,
+	"outline.autoPreview": false,
+	"outline.followCursor": true,
+	"explorer.icon.enableNerdfont": true,
+    "tabnine.priority": 2
 }

@@ -44,6 +44,10 @@ Plug 'vimers/vim-log'
 Plug 'ggandor/leap.nvim'
 " terminal
 Plug 'voldikss/vim-floaterm'
+" debug
+Plug 'mfussenegger/nvim-dap'
+Plug 'rcarriga/nvim-dap-ui'
+Plug 'theHamsta/nvim-dap-virtual-text'
 call plug#end()
 " }}}1
 
@@ -63,6 +67,7 @@ if has('nvim')
 	lua require('treesitter')
 	lua require('leap').add_default_mappings()
 	lua require('telescope_config')
+	lua require('dap_config')
 endif
 
 " common key mappings {{{1
