@@ -1,4 +1,5 @@
 local dap = require('dap')
+local dapui = require("dapui")
 
 vim.keymap.set('n', '<F5>', function() dap.continue() end)
 vim.keymap.set('n', '<F10>', function() dap.step_over() end)
@@ -65,6 +66,8 @@ dap.configurations.cpp = {
 dap.configurations.c = dap.configurations.cpp
 dap.configurations.rust = dap.configurations.cpp
 
+require('dap.ext.vscode').load_launchjs(nil, {cppdbg={'c', 'cpp'}})
+
 dap.adapters.python = function(cb, config)
   if config.request == 'attach' then
     ---@diagnostic disable-next-line: undefined-field
@@ -119,7 +122,6 @@ dap.configurations.python = {
 
 require("nvim-dap-virtual-text").setup()
 
-local dapui = require("dapui")
 dapui.setup()
 
 dap.listeners.after.event_initialized["dapui_config"] = function()
