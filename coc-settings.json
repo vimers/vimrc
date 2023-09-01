@@ -73,5 +73,5 @@
 	"outline.autoPreview": false,
 	"outline.followCursor": true,
 	"explorer.icon.enableNerdfont": true,
-    "tabnine.priority": 2
+    "snippets.ultisnips.pythonPrompt": false
 }
